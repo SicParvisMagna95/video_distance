@@ -1,13 +1,25 @@
-# Extract the frames
+# Overview
+This project is to extract the key frames in a given video by distance distribution.  
+Distance functions and the number of extracted frames are user-specified.  
+The feature of frame is simply the down-sized original frame. Here I use the ratio 0.01.
+
+# Installation
+If you want to use the phash-hamming distance, the following library is needed.
+```angular2html
+pip install imagehash
 ```
+
+
+# Extract the frames
+```angular2html
 python demo.py -f {video file path} -n {number of frames to extract} -d {distance}
 ```
 
 # Example
-```
+```angular2html
 python demo.py -f E:\video\RECORD21_0131.20190101010821_2.mp4 -n 100
 ```
-```
+```angular2html
 Loading...
 The video has 1800 frames!
 Start extracting...
@@ -32,4 +44,4 @@ optional arguments:
   --distance DISTANCE, -d DISTANCE
                         distance function manhattan, euclidean, cosine,
                         phash_hamming
-```# video_distance
+```
