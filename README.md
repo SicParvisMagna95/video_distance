@@ -32,4 +32,4 @@ optional arguments:
   --distance DISTANCE, -d DISTANCE
                         distance function manhattan, euclidean, cosine,
                         phash_hamming
-```# video_distance
+```
